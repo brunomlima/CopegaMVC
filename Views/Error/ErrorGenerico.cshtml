@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "ErrorGenerico";
+}
+<br />
+<div class="container">
+    <div class="contact-main">
+        <div class="col-md-4 contact-in">
+        </div>
+        <div class="col-md-4 contact-in">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Error - @ViewBag.StatusCode</h5>
+                    <p class="card-text">@ViewBag.Mensagem</p></br>
+                    <p><img src="~/img/status_unknown.png">Erro genérico.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 contact-in">
+        </div>
+    </div>
+</div>
+<br />
