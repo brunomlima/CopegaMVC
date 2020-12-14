@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BotDetect.Web.Mvc;
+using CopegaMVC.Libraries.Lang;
 using CopegeMVC.Models;
 using CopegeMVC.Libraries.Email;
 
@@ -39,7 +40,7 @@ namespace CopegeMVC.Models
             return View();
         }
         [HttpPost]
-        [CaptchaValidationActionFilter("CaptchaCode", "ContactCaptcha", "Captcha errado!")]
+        [CaptchaValidationActionFilter("CaptchaCode", "ContactCaptcha", "Captcha errado! Digite no campo abaixo o número da imagem a cima.")]
         public IActionResult ContatoAcao([FromForm] Contato contato)
         {
             try
@@ -48,7 +49,6 @@ namespace CopegeMVC.Models
                 MvcCaptcha mvcCaptcha = new MvcCaptcha("ExampleCaptcha");
                 if (!mvcCaptcha.Validate(userInput))
                 {
-                    ModelState.AddModelError("CaptchaCode", "Captcha errado!");
                     ViewData["CONTATO"] = contato;
                     return View("Contato", contato);
                 }
@@ -58,7 +58,7 @@ namespace CopegeMVC.Models
                 if (ModelState.IsValid)
                 {
                     _gerenciarEmail.EnviarContatoPorEmail(contato);
-                    ViewData["MSG_S"] = "Mensagem de contato enviada com sucesso!";
+                    ViewData["MSG_S"] = Mensagem.MSG_S003;
                     ViewData["MSG_E"] = "";
                     MvcCaptcha.ResetCaptcha("ExampleCaptcha");
                     return View("Contato");
@@ -72,7 +72,7 @@ namespace CopegeMVC.Models
             }
             catch (Exception)
             {
-                ViewData["MSG_E"] = "Opsss! Tivemos um erro, tem novamente mais tarde!";
+                ViewData["MSG_E"] = Mensagem.MSG_E000;
             }
             return View("Contato");
 

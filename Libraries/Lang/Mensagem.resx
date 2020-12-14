@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="MSG_E000" xml:space="preserve">
+    <value>Opsss! Tivemos um erro, tem novamente mais tarde!</value>
+  </data>
   <data name="MSG_E001" xml:space="preserve">
     <value>O campo {0} é obrigatório!</value>
   </data>
@@ -137,6 +140,9 @@
   </data>
   <data name="MSG_E007" xml:space="preserve">
     <value>O campo {0} deve ter no mínimo {1} e no máximo {2}</value>
+  </data>
+  <data name="MSG_E008" xml:space="preserve">
+    <value>Captcha errado! Digite no campo abaixo o número da imagem a cima.</value>
   </data>
   <data name="MSG_S001" xml:space="preserve">
     <value>Registro salvo com sucesso!</value>

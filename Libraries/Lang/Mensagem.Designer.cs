@@ -61,6 +61,15 @@ namespace CopegaMVC.Libraries.Lang {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Opsss! Tivemos um erro, tem novamente mais tarde!.
+        /// </summary>
+        public static string MSG_E000 {
+            get {
+                return ResourceManager.GetString("MSG_E000", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a O campo {0} é obrigatório!.
         /// </summary>
         public static string MSG_E001 {
@@ -120,6 +129,15 @@ namespace CopegaMVC.Libraries.Lang {
         public static string MSG_E007 {
             get {
                 return ResourceManager.GetString("MSG_E007", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Captcha errado! Digite no campo abaixo o número da imagem a cima..
+        /// </summary>
+        public static string MSG_E008 {
+            get {
+                return ResourceManager.GetString("MSG_E008", resourceCulture);
             }
         }
         
