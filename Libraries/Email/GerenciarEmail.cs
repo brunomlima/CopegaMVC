@@ -30,7 +30,7 @@ namespace CopegeMVC.Libraries.Email
                                               "                <table align='center' border='0' cellpadding='0' cellspacing='0' width='600' style='border-collapse: collapse;'>" +
                                               "                    <tr>" +
                                               "                        <td align='center' bgcolor='#DDDDDD' style='padding: 40px 0 30px 0;'>" +
-                                              "                            <img src='https://" + _config.GetValue<string>("Empresa:Dominio") + "/images/LogoCOPEGE.png' alt='Copege de E-mail' style='display: block;' />" +
+                                              "                            <img src='http://" + _config.GetValue<string>("Empresa:Dominio") + "/images/LogoCOPEGE.png' alt='Copege de E-mail' style='display: block;' />" +
                                               "                        </td>" +
                                               "                    </tr>" +
                                               "                    <tr>" +
@@ -62,7 +62,7 @@ namespace CopegeMVC.Libraries.Email
                                               "                                                <td style='font-size: 0; line-height: 0;' width='20'> </td>" +
                                               "                                                <td>" +
                                               "                                                    <a href='https://wa.me/"+ _config.GetValue<string>("Empresa:Whatsapp") + "?text='>" +
-                                              "                                                    <img src='https://www.copege.com.br/images/WhatsApp.png' alt='Facebook' width='32' height='32' style='display: block;' border='0' />" +
+                                              "                                                    <img src='http://www.copege.com.br/images/WhatsApp.png' alt='Facebook' width='32' height='32' style='display: block;' border='0' />" +
                                               "                                                    </a>" +
                                               "                                                </td>" +
                                               "                                            </tr>" +
